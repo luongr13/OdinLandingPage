@@ -1,124 +1,49 @@
-*,
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto, sans-serif;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
   box-sizing: border-box;
 }
-
-ul {
-  list-style-type: none;
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
 }
 
-button {
-  background: #3882F6;
-  color: #F9FAF8;
-  border: none;
-  border-radius: 5px;
-}
+/* Reset end */
 
-.signup-btn {
-  padding: 0.5em 2em;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.container {
-  width: 65%;
-  margin: 0 auto;
-}
-
-.header {
-  padding: 2em 0 0 0;
-  background: hsl(215, 28%, 17%);
-  color: #F9FAF8;
-}
-
-.header .container.row {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.links.row {
-  gap: 2em;
-}
-
-.hero {
-  padding: 5em 0 5em 0;
-  background: #1F2937;
-  color: #F9FAF8;
-}
-
-.hero .container.row {
-  gap: 3em;
-}
-
-.hero-left {
-  flex: 1;
-  gap: 1em;
-}
-
-.hero-right {
-  background: gray;
-  padding: 1em;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-.random-info {
-  padding-top: 2em;
-  align-items: center;
-}
-
-.cards.row {
-  padding-top: 2em;
-  width: 80%;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 3em;
-}
-
-.item {
-  flex: 0 1 200px;
-  gap: 1em;
-}
-
-.card-img {
-  border: solid #3882F6 2px;
-  border-radius: 15px;
-  flex-basis: 200px;
-}
-
-.card-txt {
-  text-align: center;
-}
-
-.row {
-  display: flex;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-main {
-  font-size: 3rem;
-  font-weight: 900;
-}
-
-.hero-secondary {
-  font-size: 1.125rem;
-}
-
-.random-info-header {
-  font-size: 2.25rem;
-  font-weight: 900;
-}
