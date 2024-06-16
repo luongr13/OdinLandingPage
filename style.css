@@ -211,12 +211,10 @@ a {
 }
 
 @media (max-width: 1000px) {
-  #hero .container {
-    flex-direction: column;
+  body {
     text-align: center;
   }
-
-  #call-to-action {
-    text-align: center;
+  #hero .container {
+    flex-direction: column;
   }
 }
